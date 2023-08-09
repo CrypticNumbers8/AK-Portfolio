@@ -23,6 +23,9 @@ import {
   jobit,
   tripguide,
   threejs,
+  u_logo,
+  cosm_logo,
+  egi_logo,
 } from "../assets";
 
 export const navLinks = [
@@ -42,19 +45,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Front-End Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Full Stack Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "UI/UX Designer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Magician",
     icon: creator,
   },
 ];
@@ -73,16 +76,8 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
   },
   {
     name: "Tailwind CSS",
@@ -95,10 +90,6 @@ const technologies = [
   {
     name: "MongoDB",
     icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
   },
   {
     name: "git",
@@ -116,55 +107,60 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "Volunteer Researcher",
+    company_name: "The School of Computing, University of Utah",
+    icon: u_logo,
+    iconBg: "#ffffff",
+    date: "July 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Performed running time analysis on multiple static python code benchmarks to figure out gradual soundness.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Graduate Teaching Assistant",
+    company_name: "College of Science, University of Utah",
+    icon: u_logo,
+    iconBg: "#ffffff",
+    date: "August 2022 - May 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Teaching Assistant for CS 2420: Intro to Algorithms and Data Structures(Fall 2021).",
+      "Reinforced lessons presented by Professors, developed programming assignments and conducted lab sessions.",
+    ],
+  },
+  {
+    title: "Engineering Intern",
+    company_name: "Evans & Sutherland, A Cosm Company",
+    icon: cosm_logo,
+    iconBg: "#ffffff",
+    date: "June 2022 - August 2022",
+    points: [
+      "Created a highly efficient C# and XAML-based WPF tool during my summer internship, resulting in a 30% optimization in library search time for astronomical entities within the Digistar software.",
+      "Implemented an efficient recursive algorithm to traverse folder structures and Optimized file content search by utilizing file streams to read data in 1024-byte chunks, enhancing performance and memory usage.",
+      "Hands-on coding in C#, XAML, Windows Presentation Foundation, Visual Studio, Git.",
     ],
   },
   {
     title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    company_name: "Energy and Geoscience Institute, University of Utah",
+    icon: egi_logo,
+    iconBg: "#ffffff",
+    date: "Feb 2022 - August 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Assisted in web architecture development, deployment, documentation, debugging, and testing of the EGI website.",
+      "Implemented Angular Universal for server-side rendering, resulting in reduction of the First Contentful Paint (FCP) time by 600 ms and improved SEO.",
+      "Deployed the website on GCloud virtual machines and configured NGINX for hosting.",
+      "Hands-on coding using HTML5, CSS, JavaScript in Angular framework.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "Graduate Teaching Assistant",
+    company_name: "The School of Computing, University of Utah",
+    icon: u_logo,
+    iconBg: "#ffffff",
+    date: "August 2021 - December 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Teaching Assistant for CS 2420: Intro to Algorithms and Data Structures(Fall 2021).",
+      "Reinforced lessons presented by Professors, developed programming assignments and conducted lab sessions.",
     ],
   },
 ];
@@ -198,7 +194,7 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "StoreFront Full Stack E-Commerce Website",
     description:
       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
     tags: [
@@ -211,33 +207,30 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "NodeJS",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link:
+      "https://github.com/CrypticNumbers8/StoreFront-Full-Stack-E-Commerce",
   },
   {
-    name: "Job IT",
+    name: "EightVape Website",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
       {
-        name: "react",
+        name: "HTML",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "CSS",
         color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/CrypticNumbers8/EightVape",
   },
   {
     name: "Trip Guide",
@@ -258,6 +251,61 @@ const projects = [
       },
     ],
     image: tripguide,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Movie Review Website",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carrent,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Fantasy Premier Leauge Optimal Team Generator",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "Python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Linear Programming",
+        color: "green-text-gradient",
+      },
+    ],
+    image: carrent,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Starbucks Landing Page",
+    description:
+      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: carrent,
     source_code_link: "https://github.com/",
   },
 ];
